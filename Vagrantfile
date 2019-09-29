@@ -81,5 +81,13 @@ Vagrant.configure("2") do |config|
     queryserver.vm.provision "shell", path: "querysitescript.sh"
 
   end
+
+  config.vm.define "websiteserver" do |websiteserver|
+
+    websiteserver.vm.hostname = "websiteserver"
+
+    websiteserver.vm.provision "shell", path: "webscript.sh"
+
+  end
   
 end
