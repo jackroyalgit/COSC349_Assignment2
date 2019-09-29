@@ -74,11 +74,12 @@ Vagrant.configure("2") do |config|
     override.ssh.username = "ubuntu"
   end
 
-  # Enable provisioning with a shell script. Additional provisioners such as
-  # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
-  # documentation for more information about their specific syntax and use.
-  # config.vm.provision "shell", inline: <<-SHELL
-  #   apt-get update
-  #   apt-get install -y apache2
-  # SHELL
+  config.vm.define "queryserver" do |queryserver|
+
+    queryserver.vm.hostname = "queryserver"
+
+    queryserver.vm.provision "shell", path: "querysitescript.sh"
+
+  end
+  
 end
