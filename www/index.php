@@ -49,7 +49,7 @@
 
       ?>
 </table>
-<p>Hello. Do you want to view the <a href="http://192.168.33.12"> results from the survey</a>?</p>
+<p>Hello. Do you want to view the <a href="http://ec2-18-209-180-103.compute-1.amazonaws.com/"> results from the survey</a>?</p>
 </div>
 </body>
 </html>

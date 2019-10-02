@@ -36,7 +36,7 @@
     ?>
   </table>
 
-  <p>Hello would you like to input some <a href="http://192.168.33.10"> data</a>?</p>
+  <p>Hello would you like to input some <a href="http://ec2-100-26-142-112.compute-1.amazonaws.com/"> data</a>?</p>
 </body>
 </html>
 
